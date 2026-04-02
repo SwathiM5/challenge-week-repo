@@ -3,12 +3,12 @@ def caesar_cipher(text, shift):
     for char in text:
         if char .isupper():
             start = ord('A')
-            new_char = chr(ord(char) - start + shift % 26 + start)
+            new_char = chr((ord(char) - start + shift) % 26 + start)
             result += new_char
         
         elif char .islower():
             start = ord('a')
-            new_char = chr(ord(char) - start + shift % 26 + start)
+            new_char = chr((ord(char) - start + shift) % 26 + start)
             result +=new_char
 
         else:
