@@ -1,0 +1,9 @@
+def is_palindrome(string):
+    normalized = string.lower().replace(" ", "")
+    reversed_string = normalized[::-1]
+    return normalized == reversed_string
+
+print(is_palindrome("racecar"))
+print(is_palindrome("code"))
+print(is_palindrome("A man a plan a canal panama"))
+print(is_palindrome("Bob"))
